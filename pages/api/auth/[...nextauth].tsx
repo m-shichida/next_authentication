@@ -9,6 +9,10 @@ const options = {
       clientId: process.env.githubId || '',
       clientSecret: process.env.githubSecret ||''
     }),
+    Providers.Google({
+      clientId: process.env.googleId || '',
+      clientSecret: process.env.googleSecret || '',
+    })
   ],
 }
 

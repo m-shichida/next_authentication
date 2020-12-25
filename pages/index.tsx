@@ -7,7 +7,8 @@ export default function myComponent() {
     <p>
       {!session && <>
         ログインしてないよ <br/>
-        <button onClick={() => signIn('github')}>Sign in</button>
+        <button onClick={() => signIn('github')}>Github Sign in</button>
+        <button onClick={() => signIn('google')}>Google Sign in</button>
       </>}
       {session && <>
         <img width='300' src={session.user.image || ''} />
